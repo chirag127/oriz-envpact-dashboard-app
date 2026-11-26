@@ -47,5 +47,5 @@ jobs:
       - name: Verify dist exists
         run: |
           test -f dist/index.html
-          test -f dist/scripts/index.js
+          ls dist/_astro/*.js >/dev/null
           ls -la dist/
